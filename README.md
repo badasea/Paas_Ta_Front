@@ -2,7 +2,11 @@
 
 파스타 클라우드 공모전 : 메타버스 중계 플랫폼
 
+어플리케이션 레포지토리 링크 : https://github.com/badasea/Paas_Ta_APP
 
+프론트엔드 레포지토리 링크 : https://github.com/badasea/Paas_Ta_Front
+
+백엔드 레포지토리 링크 : 
 
 프로젝트 인원 총 3명
 
