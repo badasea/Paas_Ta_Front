@@ -70,9 +70,9 @@
 
 # ⚙ 기술 스택 
 
-개발언어 - CSS, HTML, JAVASCRIPT, JAVA, REACT
+개발언어 - CSS, HTML, JAVASCRIPT, JAVA, REACT, Nodejs, TypeScript
 
-API - ZOOM
+API - ZOOM, Material-Ui
 
 IDE - 비주얼코드, 인텔리제이
 
