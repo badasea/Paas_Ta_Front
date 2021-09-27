@@ -3,11 +3,12 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
+import Login from '../../Login';
 
 const rightLink = {
-  fontSize: 16,
+  fontSize: 18,
   color: 'common.white',
-  ml: 3,
+  ml: 5,
 };
 
 function AppAppBar() {
@@ -20,28 +21,29 @@ function AppAppBar() {
             variant="h6"
             underline="none"
             color="inherit"
-            href="/premium-themes/onepirate/"
+            href="/"
             sx={{ fontSize: 24 }}
           >
-            {'onepirate'}
+            {/* Home title */}
+            {'Gather skon(임시 제목)'}
           </Link>
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
             <Link
               color="inherit"
               variant="h6"
               underline="none"
-              href="/premium-themes/onepirate/sign-in/"
+              href="/Login"
               sx={rightLink}
             >
-              {'Sign In'}
+              {'로그인'}
             </Link>
             <Link
               variant="h6"
               underline="none"
-              href="/premium-themes/onepirate/sign-up/"
+              href="/Signup/"
               sx={{ ...rightLink, color: 'secondary.main' }}
             >
-              {'Sign Up'}
+              {'회원가입'}
             </Link>
           </Box>
         </Toolbar>

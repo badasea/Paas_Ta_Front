@@ -4,8 +4,8 @@ import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
 
 const backgroundImage =
-  'https://images.unsplash.com/photo-1534854638093-bada1813ca19?auto=format&fit=crop&w=1400&q=80';
-
+  // 'https://images.unsplash.com/photo-1534854638093-bada1813ca19?auto=format&fit=crop&w=1400&q=80';
+  'https://mediahub.seoul.go.kr/wp-content/uploads/2020/09/e890e1058ac0da01e91bc915d5114142.jpg';
 export default function ProductHero() {
   return (
     <ProductHeroLayout
@@ -22,7 +22,7 @@ export default function ProductHero() {
         alt="increase priority"
       />
       <Typography color="inherit" align="center" variant="h2" marked="center">
-         반갑습니다. 서경대 4학년 학생들이 만드는 게터 타운입니다.
+         반갑습니다. 게더 스콘 입니다.
       </Typography>
       <Typography
         color="inherit"
@@ -30,20 +30,20 @@ export default function ProductHero() {
         variant="h5"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        Enjoy secret offers up to -70% off the best luxury hotels every Sunday.
+        게더 스콘으로 집에서 쉽게 전통 시장을 구경 해보세요.
       </Typography>
       <Button
         color="secondary"
         variant="contained"
         size="large"
         component="a"
-        href="/premium-themes/onepirate/sign-up/"
+        href="/Login"
         sx={{ minWidth: 200 }}
       >
-        Register
+        입장하기
       </Button>
       <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
-        Discover the experience
+        한국형 메타버스를 경험해보세요.
       </Typography>
     </ProductHeroLayout>
   );
