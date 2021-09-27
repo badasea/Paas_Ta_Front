@@ -11,7 +11,6 @@ import Login from './Login';
 function Index() {
   return (
     <React.Fragment>
-      {/* <Login /> */}
       <AppAppBar />
       <ProductHero />
       <ProductValues />

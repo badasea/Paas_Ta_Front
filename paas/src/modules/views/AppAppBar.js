@@ -3,7 +3,6 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
-import Login from '../../Login';
 
 const rightLink = {
   fontSize: 18,
@@ -26,6 +25,7 @@ function AppAppBar() {
           >
             {/* Home title */}
             {'Gather skon(임시 제목)'}
+
           </Link>
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
             <Link

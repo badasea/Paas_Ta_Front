@@ -10,7 +10,7 @@ import { email, required } from './modules/form/validation';
 import RFTextField from './modules/form/RFTextField';
 import FormButton from './modules/form/FormButton';
 import FormFeedback from './modules/form/FormFeedback';
-//import withRoot from './modules/withRoot';
+import withRoot from './modules/withRoot';
 
 function Login() {
   const [sent, setSent] = React.useState(false);
@@ -38,7 +38,7 @@ function Login() {
       <AppForm>
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
-            Sign In
+            로그인
           </Typography>
           <Typography variant="body2" align="center">
             {'Not a member yet? '}
@@ -114,4 +114,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default withRoot(Login);

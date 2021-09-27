@@ -4,9 +4,13 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Index from './Home';
 import App from './App';
+import Login from './Login';
+import Signup from './SignUp';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Login />
+    <Signup />
     <Index />
   </React.StrictMode>,
   document.getElementById('root')
