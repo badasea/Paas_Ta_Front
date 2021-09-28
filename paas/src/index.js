@@ -6,6 +6,7 @@ import Index from './Home';
 import App from './App';
 import Login from './Login';
 import Signup from './SignUp';
+import Draw from './Gather';
 
 ReactDOM.render(
   <React.StrictMode>
