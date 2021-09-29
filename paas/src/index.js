@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Index from './Home';
-import App from './App';
 import Login from './Login';
 import Signup from './SignUp';
 import Draw from './Gather';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Login />
-    <Signup />
-    <Index />
+    {/* <Login />
+    <Signup /> */}
+    <Draw />
+    {/* <Index /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

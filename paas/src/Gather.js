@@ -1,6 +1,7 @@
 import React, {createRef, useEffect} from "react";
 import AppAppBar from './modules/views/AppAppBar';
-
+import AppFooter from './modules/views/AppFooter';
+import withRoot from './modules/withRoot';
 
 function Draw(props) {
 
@@ -52,18 +53,19 @@ function Draw(props) {
         y: 300
       };
 
-      let rupeeReady = false;
-      let rupeeImg = new Image();
+      // let rupeeReady = false;
+      // let rupeeImg = new Image();
       
-      rupeeImg.onload = function() {
-        rupeeReady = true;
-      };
+      // rupeeImg.onload = function() {
+      //   rupeeReady = true;
+      // };
       
-      rupeeImg.src = "/assets/rupee.png";
-        let rupees = {
-        x: 0,
-        y: 0
-        };
+      // rupeeImg.src = "/assets/rupee.png";
+      //   let rupees = {
+      //   x: 0,
+      //   y: 0
+      //   };
+
     let keysDown = {};
 
     window.addEventListener(
@@ -161,7 +163,7 @@ function Draw(props) {
       
       function moveChar(deltaX, deltaY, direction) {       
         var width = 1000;
-        var height = 650;
+        var height = 790;
         
         if (hero.x + deltaX > 0 && hero.x + SCALED_WIDTH + deltaX < width) {
           hero.x += deltaX * hero.speed;
@@ -218,10 +220,10 @@ function Draw(props) {
         drawFrame(walkCycle[walkIndex], currentDirection, hero.x, hero.y);
       }
 
-      function generate() {
-        rupees.x = 32 + Math.random() * (canvas.width - 64);
-        rupees.y = 32 + Math.random() * (canvas.height - 64);
-      }
+      // function generate() {
+      //   rupees.x = 32 + Math.random() * (canvas.width - 64);
+      //   rupees.y = 32 + Math.random() * (canvas.height - 64);
+      // }
 
       function drawFrame(frameX, frameY, canvasX, canvasY) {
         context?.drawImage(
@@ -246,12 +248,13 @@ function Draw(props) {
       gameLoop();
 
     return (
-        <>
+            <React.Fragment>
         <AppAppBar />
-            <canvas ref={canvasRef} width="1000" height={"650"}/>
-        </>
+            <canvas ref={canvasRef} width="1000" height={"790"}/>
+        <AppFooter />
+          </React.Fragment>
     );
 }
 
 
-export default Draw;
+export default withRoot(Draw);

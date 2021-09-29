@@ -37,7 +37,7 @@ export default function ProductHero() {
         variant="contained"
         size="large"
         component="a"
-        href="/Login"
+        href="../Login.js"
         sx={{ minWidth: 200 }}
       >
         입장하기

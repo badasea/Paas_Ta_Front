@@ -40,7 +40,7 @@ function AppAppBar() {
             <Link
               variant="h6"
               underline="none"
-              href="/Signup/"
+              href="/Draw"
               sx={{ ...rightLink, color: 'secondary.main' }}
             >
               {'회원가입'}
