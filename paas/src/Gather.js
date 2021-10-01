@@ -158,7 +158,7 @@ function Draw(props) {
 
     function openWin(){
         // 파스타 웹 페이지 링크 예정  
-        window.open("https://www.naver.com", "","width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes" );  
+        window.open("/", "","width=800, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes" );  
       }
       
       function moveChar(deltaX, deltaY, direction) {       

@@ -43,7 +43,7 @@ function Login() {
           <Typography variant="body2" align="center">
             {'Not a member yet? '}
             <Link
-              href="/premium-themes/onepirate/sign-up/"
+              href="/Signup"
               align="center"
               underline="always"
             >
