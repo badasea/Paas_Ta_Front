@@ -4,6 +4,7 @@ import Index from "./Home";
 import Draw from "./Gather";
 import Login from "./Login";
 import SignUp from "./SignUp";
+import zoom from "./zoom";
 
 class App extends Component {
     render() {
@@ -14,6 +15,8 @@ class App extends Component {
                     <Route path="/Draw" exact component={Draw} />
                     <Route path="/Login" exact component={Login} />
                     <Route path="/Signup" exact component={SignUp} />
+                    <Route path="/zoom" exact component={zoom} />
+
                 </Switch>
             </Router>
         );
