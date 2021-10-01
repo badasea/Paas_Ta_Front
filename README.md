@@ -50,6 +50,9 @@
 
 ---
 
+- 개발자 관점
+- [ ]  소스 코드 정리 (직관적인지)
+
 - 사용자 관점
 - [ ]  로그인 페이지
 - [ ]  회원가입 페이지
@@ -72,7 +75,7 @@
 
 개발언어 - CSS, HTML, JAVASCRIPT, JAVA, REACT, Nodejs, TypeScript
 
-API - ZOOM, Material-Ui
+API - ZOOM, Material-Ui, CANVAS
 
 IDE - 비주얼코드, 인텔리제이
 
