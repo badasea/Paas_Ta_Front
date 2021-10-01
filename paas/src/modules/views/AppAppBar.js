@@ -4,6 +4,8 @@ import Link from '@mui/material/Link';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
 
+import { Link as Nav, Route, Switch, Redirect } from 'react-router-dom';
+
 const rightLink = {
   fontSize: 18,
   color: 'common.white',
@@ -40,7 +42,7 @@ function AppAppBar() {
             <Link
               variant="h6"
               underline="none"
-              href="/Draw"
+              href="/Signup"
               sx={{ ...rightLink, color: 'secondary.main' }}
             >
               {'회원가입'}

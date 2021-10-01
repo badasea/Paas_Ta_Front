@@ -3,6 +3,7 @@ import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
 
+
 const backgroundImage =
   // 'https://images.unsplash.com/photo-1534854638093-bada1813ca19?auto=format&fit=crop&w=1400&q=80';
   'https://mediahub.seoul.go.kr/wp-content/uploads/2020/09/e890e1058ac0da01e91bc915d5114142.jpg';
@@ -37,7 +38,7 @@ export default function ProductHero() {
         variant="contained"
         size="large"
         component="a"
-        href="../Login.js"
+        href="Draw"
         sx={{ minWidth: 200 }}
       >
         입장하기

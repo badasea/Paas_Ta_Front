@@ -2,17 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Index from './Home';
-import Login from './Login';
-import Signup from './SignUp';
-import Draw from './Gather';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Login />
-    <Signup /> */}
-    <Draw />
-    {/* <Index /> */}
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

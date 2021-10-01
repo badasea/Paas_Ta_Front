@@ -1,0 +1,22 @@
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Index from "./Home";
+import Draw from "./Gather";
+import Login from "./Login";
+import SignUp from "./SignUp";
+
+class App extends Component {
+    render() {
+        return (
+            <Router>
+                <Switch>
+                    <Route path="/" exact render={() => <Index />} />
+                    <Route path="/Draw" exact component={Draw} />
+                    <Route path="/Login" exact component={Login} />
+                    <Route path="/Signup" exact component={SignUp} />
+                </Switch>
+            </Router>
+        );
+    }
+}
+export default App;
