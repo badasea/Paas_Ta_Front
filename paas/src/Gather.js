@@ -2,8 +2,10 @@ import React, {createRef, useEffect} from "react";
 import AppAppBar from './modules/views/AppAppBar';
 import AppFooter from './modules/views/AppFooter';
 import withRoot from './modules/withRoot';
+import Loader from './Spinner';
 
 function Draw(props) {
+
 
     let canvas;
     let context;
@@ -250,6 +252,7 @@ function Draw(props) {
     return (
             <React.Fragment>
         <AppAppBar />
+        <Loader />
             <canvas ref={canvasRef} width="1000" height={"790"}/>
         <AppFooter />
           </React.Fragment>

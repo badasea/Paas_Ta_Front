@@ -41,13 +41,13 @@ function Login() {
             로그인
           </Typography>
           <Typography variant="body2" align="center">
-            {'Not a member yet? '}
+            {'회원이 아니신가요? 회원 가입을 눌러주세요 '}
             <Link
               href="/Signup"
               align="center"
               underline="always"
             >
-              Sign Up here
+              회원 가입
             </Link>
           </Typography>
         </React.Fragment>
