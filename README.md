@@ -75,7 +75,7 @@
 
 개발언어 - CSS, HTML, JAVASCRIPT, JAVA, REACT, Nodejs, TypeScript
 
-API - ZOOM, Material-Ui
+API - ZOOM, Material-Ui, CANVAS
 
 IDE - 비주얼코드, 인텔리제이
 
