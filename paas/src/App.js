@@ -5,6 +5,7 @@ import Draw from "./Gather";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import zoom from "./zoom";
+import Town from "./Gather_town";
 
 class App extends Component {
     render() {
@@ -16,6 +17,7 @@ class App extends Component {
                     <Route path="/Login" exact component={Login} />
                     <Route path="/Signup" exact component={SignUp} />
                     <Route path="/zoom" exact component={zoom} />
+                    <Route path="/Town" exact component={Town} />
 
                 </Switch>
             </Router>
