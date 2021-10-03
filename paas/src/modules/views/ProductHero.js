@@ -38,7 +38,7 @@ export default function ProductHero() {
         variant="contained"
         size="large"
         component="a"
-        href="Draw"
+        href="Town"
         sx={{ minWidth: 200 }}
       >
         입장하기

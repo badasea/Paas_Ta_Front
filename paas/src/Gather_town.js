@@ -121,21 +121,21 @@ function Town(props) {
             false
           );
 
-        // 키보드 입력
-        canvas.addEventListener('keydown',e=>{
-            // 마우스 좌표 찾기
-            var x = hero.x;
-            var y = hero.y;
-            var coords = "X coords: " + x + ", Y coords: " + y;
-            console.log(coords);
-            // 클릭 이벤트
-            if (x >= 200 && x <= 300 && y >= 100 && y <= 200) {
-            if (e.keyCode === 88) {
-                openWin()
-                console.log('키보드 이벤트 발생!');
-            }
-            }
-        });   
+    // 키보드 입력
+    window.addEventListener('keydown',e=>{
+      // 마우스 좌표 찾기
+      var x = hero.x;
+      var y = hero.y;
+      var coords = "X coords: " + x + ", Y coords: " + y;
+      console.log(coords);
+      // 클릭 이벤트
+      if (x >= 200 && x <= 300 && y >= 100 && y <= 200) {
+      if (e.keyCode === 88) {
+          Enter()
+          console.log('키보드 이벤트 발생!');
+      }
+      }
+  });   
         // 마우스 클릭
         canvas.addEventListener('mousedown',e=>{
             // 마우스 좌표 찾기
@@ -156,6 +156,10 @@ function Town(props) {
           context?.drawImage(backgroundImg, 0, 0);
         }
       }
+
+    function Enter() {
+      window.location = "./Draw"
+    }
 
     function openWin(){
         // 파스타 웹 페이지 링크 예정  
