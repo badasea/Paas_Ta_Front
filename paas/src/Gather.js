@@ -248,11 +248,12 @@ function Draw(props) {
       }
 
       gameLoop();
-
+      // if (loading) return <div>로딩중..</div>;
+      // if (error) return <div>에러가 발생했습니다</div>;
     return (
             <React.Fragment>
         <AppAppBar />
-        <Loader />
+        {/* <Loader /> */}
             <canvas ref={canvasRef} width="1000" height={"790"}/>
         <AppFooter />
           </React.Fragment>

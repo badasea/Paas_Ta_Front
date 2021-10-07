@@ -11,7 +11,6 @@ function AppForm(props) {
     <Box
       sx={{
         display: 'flex',
-        backgroundImage: 'url(/static/onepirate/appCurvyLines.png)',
         backgroundRepeat: 'no-repeat',
       }}
     >
