@@ -38,13 +38,11 @@ function SignUp() {
       <AppAppBar />
       <AppForm>
         <React.Fragment>
-          <Typography variant="h3" gutterBottom marked="center" align="center">
-            Sign Up
-          </Typography>
-          <Typography variant="body2" align="center">
-            <Link href="/premium-themes/onepirate/sign-in/" underline="always">
-              Already have an account?
-            </Link>
+        <Typography
+          color="inherit"
+              variant="h3"
+              align="center">
+            GATHER SKON
           </Typography>
         </React.Fragment>
         <Form
@@ -62,7 +60,7 @@ function SignUp() {
                     disabled={submitting || sent}
                     autoComplete="fname"
                     fullWidth
-                    label="First name"
+                    label="이름"
                     name="firstName"
                     required
                   />

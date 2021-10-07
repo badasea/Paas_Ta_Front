@@ -22,7 +22,7 @@ export default function ProductHero() {
         src={backgroundImage}
         alt="increase priority"
       />
-      <Typography color="inherit" align="center" variant="h2" marked="center">
+      <Typography color="inherit" align="center" variant="h2" >
          반갑습니다. 게더 스콘 입니다.
       </Typography>
       <Typography

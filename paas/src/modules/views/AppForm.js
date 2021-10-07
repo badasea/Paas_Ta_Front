@@ -9,6 +9,10 @@ function AppForm(props) {
 
   return (
     <Box
+    style = {{
+      padding: 8,
+      backgroundColor:"white",
+    }}
       sx={{
         display: 'flex',
         backgroundRepeat: 'no-repeat',
@@ -17,7 +21,13 @@ function AppForm(props) {
       <Container maxWidth="sm">
         <Box sx={{ mt: 7, mb: 12 }}>
           <Paper
-            background="light"
+            style = {{
+              padding: 8,
+              backgroundColor:"white",
+              border: "4px solid black",
+              collapse:'collapse',
+              borderRadius:'8px',
+            }}
             sx={{ py: { xs: 4, md: 8 }, px: { xs: 3, md: 6 } }}
           >
             {children}

@@ -130,8 +130,9 @@ function Town(props) {
       console.log(coords);
       // 클릭 이벤트
       if (x >= 200 && x <= 300 && y >= 100 && y <= 200) {
-      if (e.keyCode === 88) {
-          Enter()
+        Enter()
+        if (e.keyCode === 88) {
+          //Enter()
           console.log('키보드 이벤트 발생!');
       }
       }
@@ -145,7 +146,7 @@ function Town(props) {
             console.log(coords);
             // 클릭 이벤트
             if (x >= 100 && x <= 200 && y >= 200 && y <= 300) {
-              openWin()
+              Enter()
               console.log('마우스 버튼 ON 이벤트 발생!');
             }
           });

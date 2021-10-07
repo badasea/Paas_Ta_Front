@@ -37,18 +37,11 @@ function Login() {
       <AppAppBar />
       <AppForm>
         <React.Fragment>
-          <Typography variant="h3" gutterBottom marked="center" align="center">
-            로그인
-          </Typography>
-          <Typography variant="body2" align="center">
-            {'회원이 아니신가요? 회원 가입을 눌러주세요 '}
-            <Link
-              href="/Signup"
-              align="center"
-              underline="always"
-            >
-              회원 가입
-            </Link>
+          <Typography
+            color="inherit"
+            variant="h3"
+            align="center">
+            GATHER SKON
           </Typography>
         </React.Fragment>
         <Form
@@ -91,23 +84,86 @@ function Login() {
                   ) : null
                 }
               </FormSpy>
+              <Typography variant="body2" align="center">
+                {'회원이 아니신가요? 회원 가입 버튼을 눌러주세요. '}
+                <Link
+                  href="/Signup"
+                  align="center"
+                  underline="always"
+                >
+                  회원 가입
+                </Link>
+              </Typography>
               <FormButton
-                sx={{ mt: 3, mb: 2 }}
+                sx={{ mt: 1, mb: 1 }}
                 disabled={submitting || sent}
                 size="large"
                 color="primary"
                 fullWidth
+                style={{
+                  padding: 8,
+                  border: "4px solid black",
+                  collapse: 'collapse',
+                  borderRadius: '8px',
+                }}
               >
-                {submitting || sent ? 'In progress…' : '로그인'}
+                {'로그인'}
               </FormButton>
               <FormButton
-                sx={{ mt: 3, mb: 2 }}
+                sx={{ mt: 1, mb: 1 }}
                 disabled={submitting || sent}
                 size="large"
-                color="secondary"
                 fullWidth
+                style={{
+                  padding: 8,
+                  color:"blue",
+                  backgroundColor: "white",
+                  border: "4px solid blue",
+                  collapse: 'collapse',
+                  borderRadius: '8px',
+                }}
               >
-                {submitting || sent ? 'In progress…' : 'Connect with Google'}
+                <img
+                  src="/assets/google.png"
+                />
+                {'구글 로그인'}
+              </FormButton>
+              <FormButton
+                sx={{ mt: 1, mb: 1 }}
+                disabled={submitting || sent}
+                size="large"
+                fullWidth
+                style={{
+                  padding: 8,
+                  color:"black",
+                  backgroundColor: "gold",
+                  border: "4px solid gold",
+                  collapse: 'collapse',
+                  borderRadius: '8px',
+                }}
+              >
+                <img
+                  src="/assets/kakao.png"
+                />
+                {'카카오톡 로그인'}
+              </FormButton>
+              <FormButton
+                sx={{ mt: 1, mb: 1 }}
+                disabled={submitting || sent}
+                size="large"
+                fullWidth
+                style={{
+                  padding: 8,
+                  backgroundColor: "limegreen",
+                  border: "4px solid limegreen",
+                  collapse: 'collapse',
+                  borderRadius: '8px',
+                }}
+              >
+                <img
+                  src="/assets/naver.png"
+                />
+                {'네이버 로그인'}
               </FormButton>
             </Box>
           )}
